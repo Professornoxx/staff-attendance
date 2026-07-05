@@ -1,0 +1,23 @@
+{
+	"name": "attendance-worker",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-07-04",
+	"compatibility_flags": ["nodejs_compat"],
+	"observability": {
+		"enabled": true
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "attendance-db",
+			"database_id": "0af3eb60-b1fc-42d6-8daa-108cb1979d49"
+		}
+	],
+	"triggers": {
+		"crons": ["0 18 * * *"]
+	},
+	"vars": {
+		"ADMIN_CHAT_ID": "6954479122",
+		"STAFF_GROUP_CHAT_ID": "-5526065691"
+	}
+}
